@@ -12,7 +12,7 @@ import { LoadingView } from './components/views/LoadingView';
 
 const fetchData = () =>
   axios
-    .get<DataStructure[], AxiosResponse<string>>('/data/find_challenge.txt')
+    .get<DataStructure[], AxiosResponse<string>>('data/find_challenge.txt')
     .then(res => res.data)
     .then(res => res.split('\n'))
     .then(lines => lines.map(line => JSON.parse(line)));

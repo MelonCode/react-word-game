@@ -6,7 +6,7 @@ export const CongratulationsView: FC = () => (
       className="hat"
       width={200}
       height={200}
-      src="/hat.svg"
+      src="hat.svg"
       alt="Sombrero"
     />
     <h2> Congratulations! </h2>

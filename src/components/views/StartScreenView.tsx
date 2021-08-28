@@ -12,7 +12,7 @@ export const StartScreenView: FC<StartScreenViewProps> = ({ onClick }) => (
       className="src-link"
       href="https://github.com/MelonCode/react-word-game"
     >
-      <img alt="Logo" src="/octocat.png" />
+      <img alt="Logo" src="octocat.png" />
       Source Code
     </a>
   </div>
