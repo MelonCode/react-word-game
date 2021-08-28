@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-word-game/static/css/main.718e8a76.chunk.css",
-    "main.js": "/react-word-game/static/js/main.fb668ffe.chunk.js",
-    "main.js.map": "/react-word-game/static/js/main.fb668ffe.chunk.js.map",
+    "main.js": "/react-word-game/static/js/main.e9e4e41e.chunk.js",
+    "main.js.map": "/react-word-game/static/js/main.e9e4e41e.chunk.js.map",
     "runtime-main.js": "/react-word-game/static/js/runtime-main.2c62a410.js",
     "runtime-main.js.map": "/react-word-game/static/js/runtime-main.2c62a410.js.map",
     "static/js/2.68149a77.chunk.js": "/react-word-game/static/js/2.68149a77.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.2c62a410.js",
     "static/js/2.68149a77.chunk.js",
     "static/css/main.718e8a76.chunk.css",
-    "static/js/main.fb668ffe.chunk.js"
+    "static/js/main.e9e4e41e.chunk.js"
   ]
 }
