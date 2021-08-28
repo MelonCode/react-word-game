@@ -106,6 +106,16 @@ h2 {
     animation-iteration-count: infinite;
 }
 
+.src-link {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 200px;
+    text-decoration: none;
+    color: white;
+    gap: 12px;
+}
+
 @keyframes fontJump {
     0% {
         font-size: 100%;

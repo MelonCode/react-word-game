@@ -19,3 +19,5 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 Project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+<img src="https://raw.githubusercontent.com/MelonCode/react-word-game/master/public/hat.svg" alt="drawing" width="150"/>
