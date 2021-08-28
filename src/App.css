@@ -1,0 +1,178 @@
+.app {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: lightblue;
+
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+
+
+.list-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.list {
+    padding-left: 12px;
+    margin: 0;
+    width: 100%;
+    color: white;
+    font-size: 2vw;
+    list-style-position: inside;
+}
+
+h3 {
+    color: white;
+}
+
+h2 {
+    margin: 0;
+    color: white;
+    font-size: 2vw;
+}
+
+.game {
+    --length: 1;
+    --size: calc(100% / var(--length));
+    --delay: 0;
+    --index: 100;
+    user-select: none;
+    flex-shrink: 0;
+
+    font-size: 2vw;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    line-height: 2;
+    text-transform: uppercase;
+
+    gap: calc(var(--size) * 0.05);
+    width: 35vw;
+    height: 35vw;
+    max-width: 35vw;
+    max-height: 35vw;
+}
+
+.game > div {
+    color: #51747f;
+    border-radius: 20px 20px 16px 16px;
+    background: azure;
+    transition: background 50ms ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    --test: calc(var(--length) * var(--length) - var(--index));
+    transform: translate(0, -1000px);
+    animation-duration: 800ms;
+    animation-name: slideIn;
+    animation-timing-function: ease-in;
+    animation-delay: calc((var(--length) * var(--length) - var(--index)) * 10ms);
+    animation-fill-mode: forwards;
+
+    width: calc(var(--size) * 0.95);
+    height: calc(var(--size) * 0.95);
+}
+
+.game .selected {
+    background: #a1deff;
+}
+
+.game .match {
+    background: #9bb1f3;
+    transition: background 300ms ease-in;
+    animation-duration: 800ms, 300ms;
+    animation-name: slideIn, fontJump;
+}
+
+.game-wrapper {
+    display: flex;
+    gap: 24px;
+}
+
+.hat {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fontJump {
+    0% {
+        font-size: 100%;
+    }
+    60% {
+        font-size: 150%;
+    }
+    100% {
+        font-size: 100%;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translate(0, -1000px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+
+
+
+@media (orientation: portrait) {
+    .app {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .game {
+        width: 85vw;
+        height: 85vw;
+        max-height: inherit;
+        max-width: inherit;
+        font-size: 4vw;
+    }
+
+    .game-wrapper {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    .list {
+        font-size: 4vw;
+    }
+
+}

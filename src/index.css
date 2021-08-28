@@ -1,0 +1,14 @@
+body {
+  height: 100vh;
+
+  width: 100vw;
+  overscroll-behavior: none;
+
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  font-family: 'Bubblegum Sans', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
